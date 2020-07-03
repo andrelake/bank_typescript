@@ -6,7 +6,7 @@ class NegociacaoController {
     }
     adiciona(event) {
         event.preventDefault(); //não recarrega a página ao clicar no 'submit'
-        const negociacao = new Negociacao(this._inputData.value, this._inputQuantidade.value, this._inputValor.value);
+        const negociacao = new Negociacao(new Date(this._inputData.value.replace(/-/g, ',')), parseInt(this._inputQuantidade.value), parseFloat(this._inputValor.value));
         console.log(negociacao);
     }
 }
