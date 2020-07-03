@@ -1,4 +1,4 @@
-class negociacoes {
+class Negociacoes {
 
     private _negociacoes: Negociacao[] = []
 
@@ -7,8 +7,8 @@ class negociacoes {
         this._negociacoes.push(negociacao)
     }
 
-    paraArray() {
+    paraArray(): Negociacao[] {
 
-        return this._negociacoes
+        return [].concat(this._negociacoes)
     }
 }

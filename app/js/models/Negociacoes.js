@@ -1,4 +1,4 @@
-class negociacoes {
+class Negociacoes {
     constructor() {
         this._negociacoes = [];
     }
@@ -6,6 +6,6 @@ class negociacoes {
         this._negociacoes.push(negociacao);
     }
     paraArray() {
-        return this._negociacoes;
+        return [].concat(this._negociacoes);
     }
 }
